@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "wordputter-infra"
+s3_prefix = "wordputter-infra"
+region = "us-east-1"
+profile = "personal"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "OwnerTag=\"me\" ProjectTag=\"Sandbox\""

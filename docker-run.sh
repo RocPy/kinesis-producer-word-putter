@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo $LOCAL_KINESIS_ACCESS_KEY_ID
+echo $LOCAL_KINESIS_SECRET_ACCESS_KEY
+
+#docker run -it --rm -v /c/Temp/s3-log-examples/:/stream-content/ -e AWS_ACCESS_KEY_ID=$LOCAL_KINESIS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$LOCAL_KINESIS_SECRET_ACCESS_KEY wordputter-image
+docker run -it --rm -e AWS_ACCESS_KEY_ID=$LOCAL_KINESIS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$LOCAL_KINESIS_SECRET_ACCESS_KEY wordputter-image
