@@ -2,6 +2,8 @@
 
 This project contains an example Kinesis producer application from the sample application [KCL for Python](https://github.com/awslabs/amazon-kinesis-client-python) 
 
+A corresponding consumer demo application can be found at https://github.com/RocPy/kinesis-consumer-demo
+
 The `kclpy_helper.py`, `sample_aggregation_app.py`, and `kinesis_consumer.properties` where taken from the above repository. Note that if you use the example it the sample folder from that repository, make sure you change the same script names, because the pip library `amazon-kclpy` includes them and will prevent your scripts from being run.
 
 - `delete-stack.sh` - Removes the CloudFormation stack
